@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Nicholas Collis">
+	<title>Form Activity Solution File</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+			<form id="contact" method="post" action="https://wp.zybooks.com/form-viewer.php">
+				<label for="Name">Full Name<span class="required">*</span></label>
+				<input type="text" name="Name" id="Name" required placeholder="Enter first and last name">
+
+				<label for="Email">Email<span class="required">*</span></label>
+				<input type="Email" name="Email" id="Email" required placeholder="you@domain.com">
+
+				<label for="Phone">Phone<span class="required">*</span></label>
+				<input type="tel" name="Phone" id="Phone" placeholder="Phone Number">
+
+				<fieldset>
+					<legend>Preferred Method of Contact<span class="required">*</span></legend>
+					<input type="radio" name="prefContact" id="prefEmail" value="Email">
+					<label for="prefEmail">Email</label>
+
+					<input type="radio" name="prefContact" id="prefPhone" value="Phone">
+					<label for="prefPhone">Phone</label>
+				</fieldset>
+
+
+				<label for="myState">State<span class="required">*</span></label>
+				<select size="1" name="myState" id="myState">
+					<option>Select State</option>
+					<option>AL</option>
+					<option>AK</option>
+					<option>AZ</option>
+					<option>AR</option>
+					<option>CA</option>
+					<option>CO</option>
+					<option>CT</option>
+					<option>DE</option>
+					<option>FL</option>
+					<option>GA</option>
+					<option>HI</option>
+					<option>ID</option>
+					<option>IL</option>
+					<option>IN</option>
+					<option>IA</option>
+					<option>KS</option>
+					<option>KY</option>
+					<option>LA</option>
+					<option>ME</option>
+					<option>MD</option>
+					<option>MA</option>
+					<option>MI</option>
+					<option>MN</option>
+					<option>MS</option>
+					<option>MO</option>
+					<option>MT</option>
+					<option>NE</option>
+					<option>NV</option>
+					<option>NH</option>
+					<option>NJ</option>
+					<option>NM</option>
+					<option>NY</option>
+					<option>NC</option>
+					<option>ND</option>
+					<option>OH</option>
+					<option>OK</option>
+					<option>OR</option>
+					<option>PA</option>
+					<option>RI</option>
+					<option>SC</option>
+					<option>SD</option>
+					<option>TN</option>
+					<option>TX</option>
+					<option>UT</option>
+					<option>VT</option>
+					<option>VA</option>
+					<option>WA</option>
+					<option>WV</option>
+					<option>WI</option>
+					<option>WY</option>
+				</select>
+
+				<label for="myComments" id="label-block">Comment</label>
+				<textarea name="myComments" id="myComments"></textarea>
+
+				<div id="myButtons">
+					<input type="submit" name="mySubmit" id="mySubmit" value="Submit Me">		
+				</div>
+
+
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
